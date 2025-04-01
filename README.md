@@ -1,0 +1,1 @@
+This app follows the requirements set for it in the course Front end development at Haaga-Helia University of Applied Sciences.
