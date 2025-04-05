@@ -7,6 +7,8 @@ import { TCar, TCarShort } from "./types";
 import { Button } from "@mui/material";
 import AddCar from "./AddCar";
 import EditCar from "./EditCar";
+import "./App.css";
+import { myTheme } from "./themes";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -100,6 +102,7 @@ function CarShop() {
                 <AgGridReact<TCar>
                     rowData={cars}
                     columnDefs={columnDefs}
+                    theme={myTheme}
                 />
             </div>
         </>

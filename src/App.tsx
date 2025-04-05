@@ -5,12 +5,15 @@ import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
 import Typography from "@mui/material/Typography"
 import CarShop from './CarShop'
+import { ThemeProvider } from '@mui/material/styles'
+import { darkTheme } from './themes'
 
 function App() {
 
   return (
     <>
       <Container maxWidth='xl'>
+        <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <AppBar position="relative">
         <Toolbar>
@@ -18,6 +21,7 @@ function App() {
         </Toolbar>
       </AppBar>
         <CarShop />
+        </ThemeProvider>
       </Container>
     </>
   )
